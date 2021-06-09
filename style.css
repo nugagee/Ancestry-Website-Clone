@@ -1,0 +1,501 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.section {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav {
+  height: 45px;
+  background: white;
+  padding: 10px 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0 15px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.menu .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+}
+.menu .logo img {
+  height: 27px;
+  width: 180px;
+}
+.menu .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .logo a,
+.menu .login a {
+  font-size: 0.75rem;
+  margin-right: 10px;
+  font-weight: 500;
+  color: #005c7d;
+  cursor: pointer;
+}
+.menu .login .log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .login .log a:hover {
+  text-decoration: none;
+}
+.menu .login .log i {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: -5px;
+  color: #005c7d;
+  cursor: pointer;
+}
+/*=======SECTION START=======*/
+.section {
+  background: black;
+  color: white;
+}
+.section .sect {
+  min-height: 70vh;
+  background: url("./Assets/land.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 100px;
+  padding-top: 50px;
+  margin-top: -10px;
+}
+.section .sect h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 3em;
+}
+.section .sect p {
+  line-height: 1.6em;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+/*======BUTTONS======*/
+.section .sect a,
+.flip-card .card-det a,
+.slides a,
+.begin .begin-cards .begin-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #6ba410;
+  color: white;
+  font-weight: 700;
+  margin: 20px 0 50px 0;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.section .sect a:hover,
+.flip-card .card-det a:hover,
+.slides a:hover,
+.begin .begin-cards .begin-card a:hover {
+  background: #578410;
+}
+.flip .flip-cards .flip2 a,
+.begin .begin-cards .flip2 a {
+  background: #005c7d;
+}
+.flip .flip-cards .flip2 a:hover,
+.begin .begin-cards .flip2 a:hover {
+  background: #034760;
+}
+.section .sect .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect .cards .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.sect .cards .card img {
+  width: 110px;
+  margin-right: 15px;
+}
+.sect .cards .card p {
+  font-size: 0.7rem;
+}
+/*=========LEARN MORE=======*/
+.section .learn {
+  background: #005c7d;
+  min-height: 60px;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 3.5rem;
+  margin-top: -9px;
+}
+.section .learn a {
+  color: #fff;
+  text-decoration: underline;
+}
+/*=========FLIP-CARD SECTION=======*/
+.section .flip {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.235);
+  background: white;
+  color: black;
+}
+.section .flip .flip-cards {
+  padding: 0 20px;
+}
+.flip .flip-cards .flip-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 750px;
+  min-height: 300px;
+}
+.flip-card .card-det {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.flip-card .card-det i,
+.begin .begin-cards .begin-card i {
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 50%;
+  background: #6ba410;
+  transform: rotate(90deg);
+  margin: 30px 0;
+  color: white;
+}
+.flip-card .card-det h2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.flip-card .card-det p {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  opacity: 0.9;
+}
+.flip-card .card-img {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  margin-right: 50px;
+  transform: scale(0.7);
+}
+.flip .flip-cards .line {
+  height: 2px;
+  background: black;
+  border-radius: 3px;
+}
+.flip .flip-cards .flip2 {
+  margin: 30px 0;
+}
+.flip .flip-cards .flip2 .card-det i,
+.begin .begin-cards .flip2 i {
+  background: #005c7d;
+  transform: rotate(180deg);
+}
+/*=========SLIDES SECTION=======*/
+.slide {
+  background: white;
+  min-height: 70vh;
+  color: black;
+}
+.slide .slides {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide .slides .slide-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.slides .slide-cards .slid {
+  margin: 0 10px;
+}
+.slide-cards .slid img {
+  width: 230px;
+}
+.slide-cards .david {
+  transform: translateY(30px);
+}
+.slide-cards .slid p {
+  font-size: 0.7rem;
+}
+.slides h2 {
+  font-weight: 200;
+  line-height: 3em;
+}
+.slides p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+/*======SPONSORS==========*/
+.sponsors {
+  background: #f5f5f5;
+  min-height: 200px;
+  padding: 20px 0;
+}
+.sponsor p {
+  font-size: 0.8rem;
+  line-height: 2em;
+  color: black;
+  font-weight: 400;
+  margin-left: 50px;
+}
+.sponsor .spons-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.sponsor .spons-card img {
+  transform: scale(0.7);
+}
+/*=========BEGINS SECTION=======*/
+.begins {
+  min-height: 150px;
+  padding: 30px 0;
+  text-align: center;
+  background: #2d3136;
+}
+.begins .begin h2 {
+  font-weight: 400;
+  line-height: 3em;
+  font-size: 1.3rem;
+}
+.begins .begin p {
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1.4em;
+}
+.begins .begin .begin-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.begin .begin-cards .begin-card {
+  padding: 0 30px;
+}
+
+.begin .begin-cards .begin-card p {
+  font-size: 0.7rem;
+  margin-top: -20px;
+}
+.begin .begin-cards .begin-card a {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.begin .begin-cards .flip2 {
+  position: relative;
+}
+.begin .begin-cards .flip2::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 45%;
+  background: white;
+  left: 0;
+  top: 40%;
+  transform: translateY(-40%);
+}
+/*=========FOOTER==========*/
+.footers {
+  background: #f5f5f5;
+  padding: 10px 0;
+  color: black;
+}
+.footers .footer {
+  padding: 0 40px;
+}
+.footers .footer .footer-cards {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-cards .footer-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.footer .footer-cards .footer-card h2 {
+  font-size: 0.7rem;
+}
+.footer .footer-cards .footer-card a {
+  font-size: 0.6rem;
+  color: black;
+  line-height: 2em;
+}
+.footer .footer-cards .footer-card a:hover,
+.foo-copy ul li:hover,
+.footer-fle .foo-nav a:hover {
+  color: #005c7d;
+}
+.footer-fle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.6rem;
+  margin-top: 30px;
+}
+.footer-fle .foo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-fle .foo-nav a {
+  color: black;
+  margin-right: 10px;
+}
+.footer-fle .foo-country {
+  display: flex;
+  align-items: center;
+}
+.footer-fle .foo-country p {
+  margin-right: 5px;
+}
+.footer-fle .foo-country .form {
+  padding: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.359);
+  width: 150px;
+  font-size: 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+.foo-copy {
+  display: flex;
+  font-size: 0.6rem;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.foo-copy p {
+  color: black;
+  padding-right: 2px;
+}
+.foo-copy ul {
+  display: flex;
+  color: black;
+}
+.foo-copy ul a {
+  padding-right: 5px;
+  color: black;
+}
+.foo-copy ul li {
+  list-style: none;
+}
+/*===============================
+=====================================
+=====RESPONSIVENESS==========*/
+@media (max-width: 600px) {
+  .section .menu .none,
+  .section .sect .none {
+    display: none;
+  }
+  .section .menu {
+    padding: 0 5px;
+  }
+  .section .menu .logo img {
+    transform: scale(0.7);
+    margin-left: -30px;
+  }
+  .section .sect {
+    width: 118%;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 50px;
+    margin-left: -20px;
+    margin-top: -15px;
+  }
+  .section .sect {
+    background-position: top right;
+    background-size: 300% 200%;
+  }
+  .flip .flip-cards .flip-card {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .flip-card .card-det {
+    width: 80%;
+  }
+  .flip-card .card-img {
+    width: 80%;
+  }
+  .slide .slides .slide-cards {
+    flex-direction: column;
+  }
+  .slides .slide-cards .slid {
+    margin: 10px 0;
+  }
+  .slide-cards .david {
+    transform: translateX(30px);
+  }
+  .slides p {
+    text-align: center;
+  }
+  .sponsor p {
+    text-align: center;
+    margin-left: -10px;
+  }
+  .sponsor .spons-card {
+    flex-direction: column;
+  }
+  .footers .footer {
+    padding: 0 5px;
+  }
+  .footers .footer .footer-cards {
+    justify-content: space-between;
+  }
+  .footer .footer-cards .footer-card {
+    margin: 0 5px;
+  }
+  .footer-fle {
+    flex-direction: column;
+  }
+  .footer-fle .foo-country {
+    margin-top: 10px;
+  }
+  .foo-copy {
+    flex-direction: column;
+    text-align: center;
+  }
+  .foo-copy ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
